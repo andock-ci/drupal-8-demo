@@ -1,0 +1,32 @@
+uuid: cd02d060-3f2e-4876-84c5-4c9e5c879701
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.clients.field_content
+    - field.field.paragraph.clients.field_headline
+    - paragraphs.paragraphs_type.clients
+id: paragraph.clients.default
+targetEntityType: paragraph
+bundle: clients
+mode: default
+content:
+  field_content:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_headline:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+hidden:
+  created: true
+  status: true
+  uid: true

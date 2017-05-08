@@ -1,0 +1,22 @@
+uuid: 62e6cc61-0973-44c3-8342-4ea052a0c405
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - keytec
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: keytec_search
+theme: keytec
+region: '-1'
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

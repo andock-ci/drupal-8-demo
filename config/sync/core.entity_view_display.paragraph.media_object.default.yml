@@ -1,0 +1,130 @@
+uuid: 605b4616-d60d-4199-9628-df2936ce6055
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_object.field__headline
+    - field.field.paragraph.media_object.field_image
+    - field.field.paragraph.media_object.field_link
+    - field.field.paragraph.media_object.field_tape
+    - field.field.paragraph.media_object.field_text
+    - paragraphs.paragraphs_type.media_object
+  module:
+    - ds
+    - image_url_formatter
+    - link
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_media_object
+      path: ''
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+    regions:
+      content:
+        - field__headline
+        - field_tape
+        - field_text
+        - field_link
+      src:
+        - field_image
+id: paragraph.media_object.default
+targetEntityType: paragraph
+bundle: media_object
+mode: default
+content:
+  field__headline:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: headline_balzac_pink
+            pattern_mapping:
+              'ds_field_template:field__headline__value':
+                destination: headline
+                weight: 0
+                plugin: ds_field_template
+                source: field__headline__value
+    type: string
+  field_image:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      url_type: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    type: image_url
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: text_media_object
+            pattern_mapping:
+              'ds_field_template:field_link':
+                destination: text
+                weight: 0
+                plugin: ds_field_template
+                source: field_link
+    type: link
+  field_tape:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: tape_small_beige
+            pattern_mapping:
+              'ds_field_template:field_tape__value':
+                destination: label
+                weight: 0
+                plugin: ds_field_template
+                source: field_tape__value
+    type: string
+  field_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: text_media_object
+            pattern_mapping:
+              'ds_field_template:field_text':
+                destination: text
+                weight: 0
+                plugin: ds_field_template
+                source: field_text
+    type: text_default
+hidden: {  }

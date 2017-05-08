@@ -1,0 +1,19 @@
+uuid: 0e358104-b76a-4f70-8ab9-6e278dcbd1ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tape_subheadline
+    - paragraphs.paragraphs_type.small_stage
+id: paragraph.small_stage.field_tape_subheadline
+field_name: field_tape_subheadline
+entity_type: paragraph
+bundle: small_stage
+label: tape_subheadline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

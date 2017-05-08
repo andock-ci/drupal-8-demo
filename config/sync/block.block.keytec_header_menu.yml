@@ -1,0 +1,24 @@
+uuid: 25e5e689-f602-4a21-8b1b-a80283fbe8d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.header-menu
+  module:
+    - system
+  theme:
+    - keytec
+id: keytec_header_menu
+theme: keytec
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:header-menu'
+settings:
+  id: 'system_menu_block:header-menu'
+  label: header_menu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

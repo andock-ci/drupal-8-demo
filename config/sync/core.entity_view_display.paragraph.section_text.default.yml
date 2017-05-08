@@ -1,0 +1,60 @@
+uuid: f3b8b927-ad93-41ec-b8e3-1cd46bbf6057
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_text.field__headline
+    - field.field.paragraph.section_text.field_subheadline
+    - field.field.paragraph.section_text.field_text
+    - paragraphs.paragraphs_type.section_text
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_section_text
+      path: ''
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+    regions:
+      content:
+        - field_text
+        - field__headline
+        - field_subheadline
+id: paragraph.section_text.default
+targetEntityType: paragraph
+bundle: section_text
+mode: default
+content:
+  field__headline:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_subheadline:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: text_default
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden: {  }

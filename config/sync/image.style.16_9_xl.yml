@@ -1,0 +1,15 @@
+uuid: 76ff17da-8d43-4818-854b-83744ba08b29
+langcode: en
+status: true
+dependencies: {  }
+name: 16_9_xl
+label: '16:9 Xlarge'
+effects:
+  88545f82-7da0-40b9-9ed0-47a35a924b23:
+    uuid: 88545f82-7da0-40b9-9ed0-47a35a924b23
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false

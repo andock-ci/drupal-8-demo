@@ -1,0 +1,30 @@
+uuid: 2814f669-f261-4e18-9cbf-40d71202fccb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_teaser
+    - node.type.reference
+    - node.type.service
+    - paragraphs.paragraphs_type.service
+id: paragraph.service.field_teaser
+field_name: field_teaser
+entity_type: paragraph
+bundle: service
+label: teaser
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      reference: reference
+      service: service
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: reference
+field_type: entity_reference

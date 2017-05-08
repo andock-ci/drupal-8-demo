@@ -1,0 +1,7 @@
+uuid: f6ea521d-6601-40eb-bdb2-b745d5eb3e7f
+langcode: en
+status: true
+dependencies: {  }
+id: header_simplepage
+label: header_simplepage
+behavior_plugins: {  }

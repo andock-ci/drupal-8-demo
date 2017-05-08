@@ -1,0 +1,74 @@
+uuid: 59ebf949-edca-4213-8313-ce6ae0971e02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service.field_headline
+    - field.field.paragraph.service.field_tape
+    - field.field.paragraph.service.field_teaser
+    - paragraphs.paragraphs_type.service
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_section
+      path: ''
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+    regions:
+      headline:
+        - field_headline
+        - field_tape
+      content:
+        - field_teaser
+id: paragraph.service.default
+targetEntityType: paragraph
+bundle: service
+mode: default
+content:
+  field_headline:
+    type: basic_string
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_tape:
+    type: string
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: tape_cross
+            pattern_mapping:
+              'ds_field_template:field_tape':
+                destination: label
+                weight: 0
+                plugin: ds_field_template
+                source: field_tape
+  field_teaser:
+    type: entity_reference_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: reset
+          settings:
+            lb: ''
+hidden:
+  created: true
+  uid: true

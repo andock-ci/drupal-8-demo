@@ -1,0 +1,22 @@
+uuid: 12036df4-e51c-4e64-8035-f76425124a36
+langcode: en
+status: false
+dependencies:
+  theme:
+    - keytec
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: keytec_local_tasks
+theme: keytec
+region: '-1'
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

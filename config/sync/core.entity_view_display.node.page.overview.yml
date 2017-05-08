@@ -1,0 +1,51 @@
+uuid: 3722f000-a540-4c90-983d-bd3c61c284fb
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.overview
+    - field.field.node.page.field_paragraph
+    - node.type.page
+  module:
+    - ds
+    - entity_reference_revisions
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_reset
+      path: modules/contrib/ds
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - field_paragraph
+id: node.page.overview
+targetEntityType: node
+bundle: page
+mode: overview
+content:
+  field_paragraph:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

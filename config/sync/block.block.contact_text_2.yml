@@ -1,0 +1,25 @@
+uuid: 4d34599b-28fe-4958-a79b-1719f6672c86
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d5f461ba-6eff-4224-b46b-cec476e7f2f7'
+  module:
+    - block_content
+  theme:
+    - keytec
+id: contact_text_2
+theme: keytec
+region: contact_left
+weight: -10
+provider: null
+plugin: 'block_content:d5f461ba-6eff-4224-b46b-cec476e7f2f7'
+settings:
+  id: 'block_content:d5f461ba-6eff-4224-b46b-cec476e7f2f7'
+  label: contact_text
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

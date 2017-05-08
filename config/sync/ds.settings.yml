@@ -1,0 +1,12 @@
+disabled: false
+field_template: true
+ft-default: default
+ft-show-colon: false
+classes:
+  region:
+    - 'class_name_2|Friendly name'
+  field:
+    - 'class_name_2|Friendly name'
+use_field_names: true
+_core:
+  default_config_hash: xfB0qOeoAomOThclNNokdKTrVwXLcXz13SU3-4a5-FY

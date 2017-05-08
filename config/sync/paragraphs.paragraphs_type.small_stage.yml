@@ -1,0 +1,7 @@
+uuid: e8a70bd7-530d-471e-a32d-96ee8efe52cc
+langcode: en
+status: true
+dependencies: {  }
+id: small_stage
+label: small-stage
+behavior_plugins: {  }

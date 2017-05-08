@@ -1,0 +1,66 @@
+uuid: cdb5134c-f142-469c-9d1a-ea05e8329290
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_section
+    - node.type.team
+    - paragraphs.paragraphs_type.media_object
+  module:
+    - entity_reference_revisions
+id: node.team.field_paragraph_section
+field_name: field_paragraph_section
+entity_type: node
+bundle: team
+label: paragraph_section
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      media_object: media_object
+    target_bundles_drag_drop:
+      clients:
+        weight: 13
+        enabled: false
+      header_simplepage:
+        weight: 14
+        enabled: false
+      healine:
+        weight: 15
+        enabled: false
+      one_image_col:
+        weight: 16
+        enabled: false
+      media_object:
+        enabled: true
+        weight: 17
+      reference:
+        weight: 17
+        enabled: false
+      service:
+        weight: 18
+        enabled: false
+      services:
+        weight: 19
+        enabled: false
+      small_stage:
+        weight: 20
+        enabled: false
+      stage:
+        weight: 21
+        enabled: false
+      tape:
+        weight: 22
+        enabled: false
+      text_header:
+        weight: 23
+        enabled: false
+      two_col:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,56 @@
+uuid: f796bec2-020d-491e-85e0-522ba7e539a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.reference.field_content
+    - field.field.paragraph.reference.field_headline
+    - paragraphs.paragraphs_type.reference
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_section_reference
+      path: ''
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: only_content
+    regions:
+      headline:
+        - field_headline
+      content:
+        - field_content
+id: paragraph.reference.default
+targetEntityType: paragraph
+bundle: reference
+mode: default
+content:
+  field_content:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: entity_reference_entity_view
+  field_headline:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+hidden:
+  created: true
+  uid: true

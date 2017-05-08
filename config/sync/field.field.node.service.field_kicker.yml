@@ -1,0 +1,19 @@
+uuid: 2558e82b-07af-47d0-b940-7cd1a3b5fe03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_kicker
+    - node.type.service
+id: node.service.field_kicker
+field_name: field_kicker
+entity_type: node
+bundle: service
+label: kicker
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

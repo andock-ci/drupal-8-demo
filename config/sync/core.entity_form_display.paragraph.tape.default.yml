@@ -1,0 +1,25 @@
+uuid: 7fa9959b-55d6-44ae-a619-9dfc366e48b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tape.field_scroll
+    - paragraphs.paragraphs_type.tape
+  module:
+    - image
+id: paragraph.tape.default
+targetEntityType: paragraph
+bundle: tape
+mode: default
+content:
+  field_scroll:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: ''
+    third_party_settings: {  }
+    type: image_image
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,15 @@
+uuid: 84fa8eee-4c6e-41b7-a041-cf943658a575
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.one_image_col
+id: paragraph.one_image_col.default
+targetEntityType: paragraph
+bundle: one_image_col
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

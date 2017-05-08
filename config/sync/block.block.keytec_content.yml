@@ -1,0 +1,22 @@
+uuid: 29ab9787-4121-4411-8f2f-84a9057a320d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - keytec
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: keytec_content
+theme: keytec
+region: '-1'
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

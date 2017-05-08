@@ -1,0 +1,19 @@
+uuid: 67f85422-6b04-4eb1-b602-0ceb3e861814
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tape
+    - paragraphs.paragraphs_type.small_stage
+id: paragraph.small_stage.field_tape
+field_name: field_tape
+entity_type: paragraph
+bundle: small_stage
+label: tape
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

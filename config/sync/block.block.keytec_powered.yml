@@ -1,0 +1,22 @@
+uuid: 6159ab3a-7a2c-4af6-8eb1-b8aff3e2b83f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - keytec
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: keytec_powered
+theme: keytec
+region: '-1'
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

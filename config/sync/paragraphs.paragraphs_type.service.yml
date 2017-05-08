@@ -1,0 +1,6 @@
+uuid: e2220343-9db8-4324-a450-93aca21535e3
+langcode: en
+status: true
+dependencies: {  }
+id: service
+label: service

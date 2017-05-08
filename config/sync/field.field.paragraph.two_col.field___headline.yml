@@ -1,0 +1,19 @@
+uuid: e61d5f9d-2c7e-46d6-8beb-5b80e62968c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field___headline
+    - paragraphs.paragraphs_type.two_col
+id: paragraph.two_col.field___headline
+field_name: field___headline
+entity_type: paragraph
+bundle: two_col
+label: Headline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

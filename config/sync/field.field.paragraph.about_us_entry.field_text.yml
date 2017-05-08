@@ -1,0 +1,19 @@
+uuid: d47067c1-1ad6-4ac6-b59f-fafa295db31c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.about_us_entry
+id: paragraph.about_us_entry.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: about_us_entry
+label: text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

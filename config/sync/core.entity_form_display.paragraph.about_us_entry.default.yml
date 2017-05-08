@@ -1,0 +1,56 @@
+uuid: fede4d5d-4875-4f63-adbd-40803d3dd710
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_us_entry.field_align
+    - field.field.paragraph.about_us_entry.field_image
+    - field.field.paragraph.about_us_entry.field_kicker
+    - field.field.paragraph.about_us_entry.field_text
+    - field.field.paragraph.about_us_entry.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.about_us_entry
+  module:
+    - image
+id: paragraph.about_us_entry.default
+targetEntityType: paragraph
+bundle: about_us_entry
+mode: default
+content:
+  field_align:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_kicker:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

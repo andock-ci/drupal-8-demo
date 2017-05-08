@@ -1,0 +1,22 @@
+uuid: fd7fcf21-5111-474c-8008-fef36c428f6f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - keytec
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: keytec_breadcrumbs
+theme: keytec
+region: '-1'
+weight: -10
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

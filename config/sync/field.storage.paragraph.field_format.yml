@@ -1,0 +1,30 @@
+uuid: 86e520f8-e36a-43a9-9d86-8a74c01aef51
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_format
+field_name: field_format
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '6'
+      label: 6x6
+    -
+      value: '5'
+      label: 5x7
+    -
+      value: '7'
+      label: 7x5
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

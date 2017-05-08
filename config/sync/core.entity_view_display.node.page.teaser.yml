@@ -1,0 +1,19 @@
+uuid: 12cd3c9a-942c-4ff7-a26b-0c8bb358fd60
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_paragraph
+    - node.type.page
+  module:
+    - user
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_paragraph: true

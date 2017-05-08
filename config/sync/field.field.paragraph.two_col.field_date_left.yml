@@ -1,0 +1,19 @@
+uuid: bb8e4a05-ebae-4522-b0bc-d41880f7d19e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date_left
+    - paragraphs.paragraphs_type.two_col
+id: paragraph.two_col.field_date_left
+field_name: field_date_left
+entity_type: paragraph
+bundle: two_col
+label: 'Date (left)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

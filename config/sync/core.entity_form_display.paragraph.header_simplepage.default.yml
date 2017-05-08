@@ -1,0 +1,33 @@
+uuid: e50fe476-6488-42f0-947c-46d07d69ce6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.header_simplepage.field_headline
+    - field.field.paragraph.header_simplepage.field_subheadline
+    - paragraphs.paragraphs_type.header_simplepage
+  module:
+    - text
+id: paragraph.header_simplepage.default
+targetEntityType: paragraph
+bundle: header_simplepage
+mode: default
+content:
+  field_headline:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  field_subheadline:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+hidden:
+  created: true
+  status: true
+  uid: true

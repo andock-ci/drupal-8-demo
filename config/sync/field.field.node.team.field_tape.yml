@@ -1,0 +1,19 @@
+uuid: 56d7d3ea-af7e-44c0-8367-10cfceddf8ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tape
+    - node.type.team
+id: node.team.field_tape
+field_name: field_tape
+entity_type: node
+bundle: team
+label: tape
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

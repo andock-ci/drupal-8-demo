@@ -1,0 +1,89 @@
+uuid: 4169d597-db86-4ec4-a147-6a812d680dbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_header.field__headline
+    - field.field.paragraph.text_header.field_subheadline
+    - field.field.paragraph.text_header.field_tape
+    - paragraphs.paragraphs_type.text_header
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_text_header
+      path: ''
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+    regions:
+      content:
+        - field_tape
+        - field__headline
+        - field_subheadline
+id: paragraph.text_header.default
+targetEntityType: paragraph
+bundle: text_header
+mode: default
+content:
+  field__headline:
+    type: string
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: headline_balzac_green
+            pattern_mapping:
+              'ds_field_template:field__headline__value':
+                destination: headline
+                weight: 0
+                plugin: ds_field_template
+                source: field__headline__value
+  field_subheadline:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: text_media_object
+            pattern_mapping:
+              'ds_field_template:field_subheadline':
+                destination: text
+                weight: 0
+                plugin: ds_field_template
+                source: field_subheadline
+    type: text_default
+  field_tape:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: tape_large3
+            pattern_mapping:
+              'ds_field_template:field_tape__value':
+                destination: label
+                weight: 0
+                plugin: ds_field_template
+                source: field_tape__value
+    type: string
+hidden:
+  created: true
+  uid: true

@@ -1,0 +1,14 @@
+uuid: d2fafbc2-91a0-4ab7-ad0b-30ea99ddaac8
+langcode: en
+status: true
+dependencies: {  }
+name: 640x220_small
+label: '640x220 small'
+effects:
+  79d4461b-046d-417e-acb2-85eb2fc5e273:
+    uuid: 79d4461b-046d-417e-acb2-85eb2fc5e273
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 220

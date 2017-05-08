@@ -1,0 +1,15 @@
+uuid: 7d1c70ca-723e-42b6-a51b-72a291f1d631
+langcode: en
+status: true
+dependencies: {  }
+name: 16_9_m
+label: '16:9 Medium'
+effects:
+  04654dde-08af-411b-a148-96289d4c947c:
+    uuid: 04654dde-08af-411b-a148-96289d4c947c
+    id: image_scale
+    weight: 1
+    data:
+      width: 1024
+      height: null
+      upscale: false

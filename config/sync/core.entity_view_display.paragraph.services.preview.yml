@@ -1,0 +1,50 @@
+uuid: 913d384b-8cca-46b2-9173-5404b003300f
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.services.field___headline
+    - paragraphs.paragraphs_type.services
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: ds_reset
+      path: modules/contrib/ds
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+    regions:
+      ds_content:
+        - 'dynamic_block_field:paragraph-services_overview'
+    fields:
+      'dynamic_block_field:paragraph-services_overview':
+        plugin_id: 'dynamic_block_field:paragraph-services_overview'
+        weight: 0
+        label: hidden
+        formatter: default
+id: paragraph.services.preview
+targetEntityType: paragraph
+bundle: services
+mode: preview
+content:
+  field___headline:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

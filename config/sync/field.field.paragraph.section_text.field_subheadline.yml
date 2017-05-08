@@ -1,0 +1,21 @@
+uuid: 0977f909-95e1-4e39-9661-8b8c9f0b0565
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheadline
+    - paragraphs.paragraphs_type.section_text
+  module:
+    - text
+id: paragraph.section_text.field_subheadline
+field_name: field_subheadline
+entity_type: paragraph
+bundle: section_text
+label: subheadline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

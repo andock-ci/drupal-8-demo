@@ -1,0 +1,19 @@
+uuid: 6cd5ce25-3e36-40c3-b4a5-b928abf57b85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field__headline
+    - node.type.service
+id: node.service.field__headline
+field_name: field__headline
+entity_type: node
+bundle: service
+label: headline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

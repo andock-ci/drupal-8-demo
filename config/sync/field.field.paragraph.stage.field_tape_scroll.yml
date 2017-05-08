@@ -1,0 +1,19 @@
+uuid: 65cc3317-c61b-418e-987a-f2bccbae52cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tape_scroll
+    - paragraphs.paragraphs_type.stage
+id: paragraph.stage.field_tape_scroll
+field_name: field_tape_scroll
+entity_type: paragraph
+bundle: stage
+label: tape_scroll
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

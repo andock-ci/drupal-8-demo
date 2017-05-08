@@ -1,0 +1,22 @@
+uuid: b8d0859d-6cc9-43a5-bb09-011d4bf36082
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.team
+  module:
+    - user
+id: node.team.teaser
+targetEntityType: node
+bundle: team
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_image: true
+  field_paragraph_section: true
+  field_paragraph_section_text: true
+  field_subheadline: true
+  field_tape: true

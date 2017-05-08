@@ -1,0 +1,15 @@
+uuid: 23c8b9fa-f18e-41de-b434-63db2202a168
+langcode: en
+status: true
+dependencies: {  }
+name: 3x2_small
+label: '3x2 small (126x157)'
+effects:
+  b90a6494-1c0d-4c8e-86ed-48f3562f968a:
+    uuid: b90a6494-1c0d-4c8e-86ed-48f3562f968a
+    id: image_scale
+    weight: 1
+    data:
+      width: 126
+      height: 157
+      upscale: false

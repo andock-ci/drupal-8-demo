@@ -1,0 +1,14 @@
+uuid: 38211bbc-fdc5-46de-91dc-1829e77e7eba
+langcode: en
+status: true
+dependencies: {  }
+name: 1024x220_medium
+label: '1024x220 medium'
+effects:
+  dbe5a29e-a516-479c-b1e4-47b4a73ffa51:
+    uuid: dbe5a29e-a516-479c-b1e4-47b4a73ffa51
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 220

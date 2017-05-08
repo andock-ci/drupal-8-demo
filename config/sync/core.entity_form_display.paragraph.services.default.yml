@@ -1,0 +1,23 @@
+uuid: b61f8684-0e6d-4e0b-b4c5-4ac40393ec9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services.field___headline
+    - paragraphs.paragraphs_type.services
+id: paragraph.services.default
+targetEntityType: paragraph
+bundle: services
+mode: default
+content:
+  field___headline:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

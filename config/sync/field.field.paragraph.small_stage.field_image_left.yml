@@ -1,0 +1,38 @@
+uuid: 0e9d9be1-6346-4b7b-97e3-d09cc2925380
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_left
+    - paragraphs.paragraphs_type.small_stage
+  module:
+    - image
+id: paragraph.small_stage.field_image_left
+field_name: field_image_left
+entity_type: paragraph
+bundle: small_stage
+label: image_left
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

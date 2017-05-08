@@ -1,0 +1,7 @@
+uuid: 9a8dc3b3-2cb6-488a-a9c5-92941dcb8c5f
+langcode: en
+status: true
+dependencies: {  }
+id: about_us_entry
+label: about_us_entry
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: d91c3122-20fd-4af5-a428-85bdc8e039ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color
+    - paragraphs.paragraphs_type.two_col
+  module:
+    - options
+id: paragraph.two_col.field_color
+field_name: field_color
+entity_type: paragraph
+bundle: two_col
+label: Color
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

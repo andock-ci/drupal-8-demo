@@ -1,0 +1,45 @@
+uuid: 7a5f7afc-cf3b-4150-b343-9caff7132359
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.header_simplepage.field_headline
+    - field.field.paragraph.header_simplepage.field_subheadline
+    - paragraphs.paragraphs_type.header_simplepage
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_header_simplepage
+      path: ''
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+    regions:
+      label:
+        - field_headline
+      text:
+        - field_subheadline
+id: paragraph.header_simplepage.default
+targetEntityType: paragraph
+bundle: header_simplepage
+mode: default
+content:
+  field_headline:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_subheadline:
+    type: text_default
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,7 @@
+uuid: d9aa8f40-d6d1-46e2-8e75-9c41630abd23
+langcode: en
+status: true
+dependencies: {  }
+id: media_object
+label: media-object
+behavior_plugins: {  }

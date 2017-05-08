@@ -1,0 +1,41 @@
+uuid: 4b61e45c-4267-4443-bb72-4fd76dc6a4d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.clients.field_clients_image
+    - node.type.clients
+  module:
+    - ds
+    - image_url_formatter
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_teaser_clients
+      path: ''
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+    regions:
+      src:
+        - field_clients_image
+id: node.clients.default
+targetEntityType: node
+bundle: clients
+mode: default
+content:
+  field_clients_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+      url_type: ''
+    third_party_settings: {  }
+    type: image_url
+hidden:
+  links: true

@@ -1,0 +1,30 @@
+uuid: e279ba6d-c530-40e3-a61b-b795fa0c03a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_color
+field_name: field_color
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: grey
+      label: grey
+    -
+      value: yellow
+      label: yellow
+    -
+      value: pink
+      label: pink
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

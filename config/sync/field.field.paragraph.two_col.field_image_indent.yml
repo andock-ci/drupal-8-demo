@@ -1,0 +1,21 @@
+uuid: 1fd67c05-bcbb-40b3-8bfe-2c398dba3428
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_indent
+    - paragraphs.paragraphs_type.two_col
+  module:
+    - options
+id: paragraph.two_col.field_image_indent
+field_name: field_image_indent
+entity_type: paragraph
+bundle: two_col
+label: 'Image Indent'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

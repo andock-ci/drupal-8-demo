@@ -1,0 +1,21 @@
+uuid: 2f8b8ac1-33b4-4335-8e4a-8f33c4cb5d1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_format
+    - paragraphs.paragraphs_type.two_col
+  module:
+    - options
+id: paragraph.two_col.field_format
+field_name: field_format
+entity_type: paragraph
+bundle: two_col
+label: Format
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

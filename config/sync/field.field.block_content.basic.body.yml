@@ -1,0 +1,26 @@
+uuid: 4a4e2359-65a2-4b17-b3e7-42327846123f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.basic.body
+field_name: body
+entity_type: block_content
+bundle: basic
+label: body
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    summary: ''
+    value: "<p>Wir freuen uns, Sie bei Ihrem Drupal Projekt unterstützen zu dürfen! Rufen Sie uns an oder schreiben Sie uns.</p>\r\n\r\n<p>089 / 255 44 779 - 10</p>\r\n\r\n<p>patrick.konatantin@key-tec.de</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,50 @@
+uuid: b0d5e778-d271-49ab-af7a-59dc91642a03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.small_stage.field_bg_image
+    - field.field.paragraph.small_stage.field_image_left
+    - field.field.paragraph.small_stage.field_tape
+    - field.field.paragraph.small_stage.field_tape_subheadline
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.small_stage
+  module:
+    - image
+id: paragraph.small_stage.default
+targetEntityType: paragraph
+bundle: small_stage
+mode: default
+content:
+  field_bg_image:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_image_left:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_tape:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_tape_subheadline:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

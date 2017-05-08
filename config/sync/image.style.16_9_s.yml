@@ -1,0 +1,15 @@
+uuid: ace7698b-5c6d-4337-9682-bc82d826125b
+langcode: en
+status: true
+dependencies: {  }
+name: 16_9_s
+label: '16:9 Small'
+effects:
+  f3c63c0d-6480-410f-b8af-0a28bc71c348:
+    uuid: f3c63c0d-6480-410f-b8af-0a28bc71c348
+    id: image_scale
+    weight: 1
+    data:
+      width: 640
+      height: null
+      upscale: false

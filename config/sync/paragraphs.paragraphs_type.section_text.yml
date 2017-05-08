@@ -1,0 +1,7 @@
+uuid: 279b9367-9332-4dad-b486-a2cdf33d8f28
+langcode: en
+status: true
+dependencies: {  }
+id: section_text
+label: section-text
+behavior_plugins: {  }

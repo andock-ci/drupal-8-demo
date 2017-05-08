@@ -1,0 +1,72 @@
+uuid: a7b0ba9a-0497-42b0-b9ad-39e8fc7f23d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_section_text
+    - node.type.team
+    - paragraphs.paragraphs_type.section_text
+  module:
+    - entity_reference_revisions
+id: node.team.field_paragraph_section_text
+field_name: field_paragraph_section_text
+entity_type: node
+bundle: team
+label: paragraph_section_text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      section_text: section_text
+    target_bundles_drag_drop:
+      about_us_entry:
+        weight: 16
+        enabled: false
+      clients:
+        weight: 17
+        enabled: false
+      header_simplepage:
+        weight: 18
+        enabled: false
+      healine:
+        weight: 19
+        enabled: false
+      media_object:
+        weight: 20
+        enabled: false
+      one_image_col:
+        weight: 21
+        enabled: false
+      reference:
+        weight: 22
+        enabled: false
+      section_text:
+        enabled: true
+        weight: 23
+      service:
+        weight: 24
+        enabled: false
+      services:
+        weight: 25
+        enabled: false
+      small_stage:
+        weight: 26
+        enabled: false
+      stage:
+        weight: 27
+        enabled: false
+      tape:
+        weight: 28
+        enabled: false
+      text_header:
+        weight: 29
+        enabled: false
+      two_col:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

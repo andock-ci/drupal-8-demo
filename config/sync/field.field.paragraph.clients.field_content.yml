@@ -1,0 +1,28 @@
+uuid: bc1c3373-f595-4cba-bff9-6de0453a3bcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - node.type.clients
+    - paragraphs.paragraphs_type.clients
+id: paragraph.clients.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: clients
+label: content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      clients: clients
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

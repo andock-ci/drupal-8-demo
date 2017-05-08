@@ -1,0 +1,24 @@
+uuid: 500d2a2c-3972-4827-8814-01100ab0a4e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_image_indent
+field_name: field_image_indent
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: top-indent
+      label: top-indent
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

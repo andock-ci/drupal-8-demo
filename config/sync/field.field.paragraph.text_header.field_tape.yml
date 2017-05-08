@@ -1,0 +1,19 @@
+uuid: 6cec808b-c7d0-4fb5-bd76-99b995685d59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tape
+    - paragraphs.paragraphs_type.text_header
+id: paragraph.text_header.field_tape
+field_name: field_tape
+entity_type: paragraph
+bundle: text_header
+label: tape
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 98c179b9-0f89-44d9-92fd-941557e954be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_align
+    - paragraphs.paragraphs_type.about_us_entry
+  module:
+    - options
+id: paragraph.about_us_entry.field_align
+field_name: field_align
+entity_type: paragraph
+bundle: about_us_entry
+label: align
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string
