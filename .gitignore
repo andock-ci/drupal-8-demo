@@ -6,10 +6,3 @@ docker-compose.yml
 docroot/sites/*/settings.local.php
 docroot/sites/*/files
 
-#### BEGIN REMOVE ANDOCK-CI ###
-docroot/core
-docroot/modules/contrib
-docroot/themes/contrib
-docroot/profiles/contrib
-vendor
-#### END REMOVE ANDOCK-CI ###

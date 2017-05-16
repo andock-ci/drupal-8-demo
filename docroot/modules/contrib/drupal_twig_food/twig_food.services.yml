@@ -1,0 +1,6 @@
+services:
+  twig_food.twig_extension:
+    class: Drupal\twig_food\TwigExtension\Food
+    arguments: ['@entity_type.manager', '@renderer']
+    tags:
+      - { name: twig.extension }
