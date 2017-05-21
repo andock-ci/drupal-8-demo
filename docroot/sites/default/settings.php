@@ -766,7 +766,7 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
 
-if (file_exists(__DIR__ . '/andock-ci.settings.local.php') && isset($_ENV['ANDOCK_CI'])) {
+if (file_exists(__DIR__ . '/andock-ci.settings.local.php') && getenv('ANDOCK_CI') == 1) {
   include __DIR__ . '/andock-ci.settings.local.php';
 }
 
