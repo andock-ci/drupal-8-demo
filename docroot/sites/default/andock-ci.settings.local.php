@@ -33,17 +33,6 @@
 assert_options(ASSERT_ACTIVE, TRUE);
 \Drupal\Component\Assertion\Handle::register();
 
-/**
- * Enable local development services.
- */
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
-
-/**
- * Show all error messages, with backtrace information.
- *
- * In case the error level could not be fetched from the database, as for
- * example the database connection failed, we rely only on this value.
- */
 $config['system.logging']['error_level'] = 'verbose';
 
 /**
@@ -64,7 +53,7 @@ $config['system.logging']['error_level'] = 'verbose';
  *
  * Do not use this setting until after the site is installed.
  */
-$settings['cache']['bins']['render'] = 'cache.backend.null';
+# $settings['cache']['bins']['render'] = 'cache.backend.null';
 
 /**
  * Disable Dynamic Page Cache.
@@ -73,7 +62,7 @@ $settings['cache']['bins']['render'] = 'cache.backend.null';
  * cacheability metadata is present (and hence the expected behavior). However,
  * in the early stages of development, you may want to disable it.
  */
-$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+# $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 
 /**
  * Allow test modules and themes to be installed.
@@ -82,7 +71,7 @@ $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
  * During development it can be useful to install test extensions for debugging
  * purposes.
  */
-$settings['extension_discovery_scan_tests'] = TRUE;
+# $settings['extension_discovery_scan_tests'] = FALSE;
 
 /**
  * Enable access to rebuild.php.
@@ -92,7 +81,7 @@ $settings['extension_discovery_scan_tests'] = TRUE;
  * be gained by generating a query string from rebuild_token_calculator.sh and
  * using these parameters in a request to rebuild.php.
  */
-$settings['rebuild_access'] = TRUE;
+# $settings['rebuild_access'] = TRUE;
 
 /**
  * Skip file system permissions hardening.
@@ -104,7 +93,7 @@ $settings['rebuild_access'] = TRUE;
  * user pulling in the changes won't have permissions to modify files in the
  * directory.
  */
-$settings['skip_permissions_hardening'] = TRUE;
+$settings['skip_permissions_hardening'] = FALSE;
 
 /**
  * Access control for update.php script.
@@ -117,7 +106,7 @@ $settings['skip_permissions_hardening'] = TRUE;
  * After finishing the upgrade, be sure to open this file again and change the
  * TRUE back to a FALSE!
  */
-$settings['update_free_access'] = TRUE;
+# $settings['update_free_access'] = FALSE;
 
 
 # Docker DB connection settings.
