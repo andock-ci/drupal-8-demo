@@ -765,7 +765,11 @@ if (file_exists('/var/www/site-php')) {
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
-$settings['simple_environment_indicator'] = 'DarkRed PRD';
+
+if (file_exists(__DIR__ . '/andock-ci.settings.local.php')) {
+  include __DIR__ . '/andock-ci.settings.local.php';
+}
+
 
 $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
 
