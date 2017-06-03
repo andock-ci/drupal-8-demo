@@ -1,0 +1,4 @@
+- name: drush cim
+  command: fin exec -T "drush cim -y"
+  args:
+    chdir: "{{ docroot_path }}"
