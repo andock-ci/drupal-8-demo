@@ -1,11 +1,11 @@
-uuid: ab1a1de0-097d-4d0d-91bf-e247c521bc30
-name: 'My Drupal 8 Site'
+uuid: 965d9a59-0861-48e3-a43a-056b552b9183
+name: Site-Install
 mail: admin@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/10
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

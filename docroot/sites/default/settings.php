@@ -746,9 +746,6 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components',
 ];
 
-if (file_exists('/var/www/site-php')) {
- require '/var/www/site-php/keytec/keytec-settings.inc';
-}
 
 /**
  * Load local development override configuration, if available.
@@ -765,7 +762,13 @@ if (file_exists('/var/www/site-php')) {
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
-$settings['simple_environment_indicator'] = 'DarkRed PRD';
+
+if (file_exists(__DIR__ . '/andock-ci.settings.local.php') && getenv('ANDOCK_CI') == 1) {
+  include __DIR__ . '/andock-ci.settings.local.php';
+}
+
+
+$settings['install_profile'] = 'minimal';
 
 $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
 
