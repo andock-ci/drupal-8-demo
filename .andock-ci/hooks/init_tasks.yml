@@ -4,6 +4,6 @@
     chdir: "{{ docroot_path }}"
 
 - name: drush sql-sync
-  command: fin exec -T "drush sql-sync @keytec.test @self -y"
+  command: fin exec -T "drush si -y"
   args:
     chdir: "{{ docroot_path }}"

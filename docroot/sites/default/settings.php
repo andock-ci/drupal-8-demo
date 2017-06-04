@@ -763,8 +763,8 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
 
-if (file_exists(__DIR__ . '/andock-ci.settings.local.php') && getenv('ANDOCK_CI') == 1) {
-  include __DIR__ . '/andock-ci.settings.local.php';
+if (file_exists(__DIR__ . '/settings.andock-ci.php') && getenv('ANDOCK_CI') == 1) {
+  include __DIR__ . '/settings.andock-ci.php';
 }
 
 
