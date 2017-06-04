@@ -3,7 +3,7 @@
   args:
     chdir: "{{ docroot_path }}"
 
-- name: drush sql-sync
-  command: fin exec -T "drush si -y"
+- name: drush si
+  command: fin exec -T "drush si minimal -y"
   args:
     chdir: "{{ docroot_path }}"
