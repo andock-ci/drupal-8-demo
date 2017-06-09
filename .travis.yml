@@ -22,7 +22,7 @@ branches:
     - develop
 
 before_install:
-  - ./.andock-ci/before_install.sh
+  - ./before_install.sh
 
 install:
   # Install Ansible.
