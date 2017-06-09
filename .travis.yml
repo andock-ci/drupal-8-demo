@@ -37,7 +37,3 @@ script:
   - acp version
   - acp build
   - acp fin up
-  - acp fin update
-  - acp fin test
-  - acp fin stop
-  - acp fin rm
