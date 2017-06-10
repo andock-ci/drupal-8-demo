@@ -12,4 +12,4 @@ mv -fv ssh-config ~/.ssh/config
 git config --global user.email "christian.wiedemann@key-tec.de"
 git config --global user.name "KEY-TEC (via TravisCI)"
 
-sudo curl -fsSL get.docksal.io | sh
+#sudo curl -fsSL get.docksal.io | sh
