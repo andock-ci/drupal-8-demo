@@ -34,7 +34,7 @@ install:
 
 script:
   # Check the role/playbook's syntax.
-  - ls
+  - set -e
   - acp version
   - acp build
   - acp fin init
