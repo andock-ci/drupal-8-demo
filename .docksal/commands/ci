@@ -1,25 +1,4 @@
 #!/bin/bash
-DOCROOT='docroot'
-DOCROOT_PATH=${PROJECT_ROOT}/${DOCROOT}
-echo ${PROJECT_ROOT}
-# Set to the appropriate site directory
 
-PROJECT='keytec';
-ENV="dev"
-
-set -e
-    fin up
-    REMOTE_SITE=${PROJECT}.${ENV}
-    SITEDIR_PATH="${DOCROOT_PATH}/sites/default"
-    cp -R ${PROJECT_ROOT}/.docksal/drupal/files $SITEDIR_PATH
-
-    cp ${PROJECT_ROOT}/.docksal/drupal/ci.settings.local.php ${SITEDIR_PATH}/settings.local.php
-    cd ${SITEDIR_PATH}
-
-    fin drush sql-create -y
-    fin drush sql-sync @${REMOTE_SITE} @self -y
-    fin drush cr
-    fin drush updb -y
-    fin drush cim -y
-    #fin drush -y rsync @${REMOTE_SITE}:sites/default/files @self:sites/default
-    fin share --help
+fin exec -T "drush sql-create -y"
+fin exec -T "drush si minimal -y"

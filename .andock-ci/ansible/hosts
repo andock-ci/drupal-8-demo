@@ -1,6 +1,0 @@
-[andock-ci-build-server]
-localhost   ansible_connection=local
-
-[andock-ci-fin-server]
-dev.key-tec.de   ansible_user=andock-ci
-
