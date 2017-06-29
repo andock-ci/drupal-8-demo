@@ -1,4 +1,0 @@
-#!/bin/bash
-
-fin exec -T "drush sql-create -y"
-fin exec -T "drush si minimal -y"
