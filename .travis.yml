@@ -32,4 +32,5 @@ script:
   - acp version
   - acp build
   - acp fin init
+  - acp fin update
   - acp fin test
