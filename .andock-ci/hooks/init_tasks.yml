@@ -2,10 +2,10 @@
   command: fin exec -T "drush sql-create -y"
   args:
     chdir: "{{ docroot_path }}"
-  when: instance_exists_before == false
+  when: environment_exists_before == false
 
 - name: fin site install
   command: fin exec -T "drush si minimal -y"
   args:
     chdir: "{{ docroot_path }}"
-  when: instance_exists_before == false
+  when: environment_exists_before == false
