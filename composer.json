@@ -14,12 +14,7 @@
     "cweagans/composer-patches": "~1.0",
     "drupal/core": "8.2.6",
     "drush/drush": "~8.0",
-    "drupal/console": "~1.0",
-    "drupal/paragraphs": "1.x-dev",
-    "drupal/ds": "^2.6",
-    "drupal/components": "^1.0",
-    "burdapraha/drupal_twig_food": "dev-master",
-    "drupal/ui_patterns": "1.x-dev"
+    "drupal/console": "~1.0"
   },
   "require-dev": {
     "behat/mink": "~1.7",
