@@ -18,4 +18,3 @@ services:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: cli
-    image: docksal/cli:1.0-php5
