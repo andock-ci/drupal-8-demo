@@ -1,5 +1,5 @@
 - name: fin init
-  command: fin init
+  command: fin init-andock-ci
   args:
     chdir: "{{ docroot_path }}"
   when: environment_exists_before == false
