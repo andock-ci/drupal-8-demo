@@ -23,7 +23,6 @@ before_install:
   - ./before_install.sh
 
 install:
-  # Install Ansible.
   - curl -fsSL https://raw.githubusercontent.com/andock-ci/pipeline/master/install-pipeline | sh
 
 script:
