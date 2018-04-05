@@ -6,9 +6,6 @@
 ##
 ## Usage: fin init-site
 
-# Abort if anything fails
-set -e
-
 #-------------------------- Settings --------------------------------
 
 # PROJECT_ROOT and DOCROOT are set as env variables in cli
