@@ -27,7 +27,7 @@ install:
 
 script:
   # Check the role/playbook's syntax.
-  - acp connect "dev.key-tec.de"
+  - acp connect "andock-ci-server" "dev.key-tec.de" "root"
   - acp version
   - acp build
   - acp fin init
