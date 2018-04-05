@@ -1,4 +1,4 @@
-domain: "drupal-8-demo.dev.key-tec.de drupal-82-demo.dev.key-tec.de "
+domain: "drupal-8-demo.dev.andock-ci.io drupal-82-demo.dev.andock-ci.io"
 project_name: "drupal-8-demo"
 target_branch_suffix: ""
 
