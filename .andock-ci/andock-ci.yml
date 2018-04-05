@@ -3,7 +3,7 @@ project_name: "drupal-8-demo"
 target_branch_suffix: ""
 
 git_source_repository_path: git@github.com:andock-ci/drupal-8-demo.git
-git_target_repository_path: https://github.com/andock-ci/drupal-8-demo.git
+git_target_repository_path: https://github.com/andock-ci/drupal-8-demo-build.git
 hook_build_tasks: "{{project_path}}/.andock-ci/hooks/build_tasks.yml"
 hook_init_tasks: "{{project_path}}/.andock-ci/hooks/init_tasks.yml"
 hook_update_tasks: "{{project_path}}/.andock-ci/hooks/update_tasks.yml"
