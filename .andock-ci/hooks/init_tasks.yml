@@ -1,3 +1,8 @@
+- name: Composer install
+  command: fin rc -T composer install
+  args:
+    chdir: "{{ project_path }}"
+
 - name: fin init
   command: fin init
   args:
