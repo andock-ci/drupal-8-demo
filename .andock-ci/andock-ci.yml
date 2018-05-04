@@ -1,6 +1,7 @@
 domain: "drupal-8-demo.dev.key-tec.de drupal-82-demo.dev.key-tec.de "
 project_name: "drupal-8-demo"
 target_branch_suffix: ""
+andock_ci_host:
 
 git_source_repository_path: git@github.com:andock-ci/drupal-8-demo.git
 git_target_repository_path: https://github.com/andock-ci/drupal-8-demo.git
