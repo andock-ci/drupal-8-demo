@@ -1,7 +1,6 @@
-domain: "drupal-8-demo.dev.key-tec.de drupal-8-demo.dev.andock.ci"
+domain: "drupal-8-demo.dev.andock-ci.io drupal-82-demo.dev.andock-ci.io"
 project_name: "drupal-8-demo"
 git_source_repository_path: git@github.com:andock-ci/drupal-8-demo.git
-
 
 hook_build_tasks: "{{project_path}}/.andock-ci/hooks/build_tasks.yml"
 hook_init_tasks: "{{project_path}}/.andock-ci/hooks/init_tasks.yml"

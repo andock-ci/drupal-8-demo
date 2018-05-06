@@ -23,12 +23,15 @@ before_install:
   - ./before_install.sh
 
 install:
-  # Install Ansible.
   - curl -fsSL https://raw.githubusercontent.com/andock-ci/pipeline/master/install-pipeline | sh
 
 script:
   # Check the role/playbook's syntax.
+<<<<<<< HEAD
   - acp connect "default" "dev.key-tec.de"
+=======
+  - acp connect "andock-ci-server" "dev.key-tec.de" "root"
+>>>>>>> 9dd44b813fd4ded8ec6066b3057243d5b21183d7
   - acp version
   - acp build
   - acp fin init

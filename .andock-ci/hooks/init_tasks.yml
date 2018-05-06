@@ -1,11 +1,7 @@
-- name: drush sql-create
-  command: fin exec -T "drush sql-create -y"
+- name: fin init-andock-ci
+  shell: fin drush si standard -y
   args:
     chdir: "{{ docroot_path }}"
   when: environment_exists_before == false
+  ignore_errors: yes
 
-- name: fin site install
-  command: fin exec -T "drush si minimal -y"
-  args:
-    chdir: "{{ docroot_path }}"
-  when: environment_exists_before == false
