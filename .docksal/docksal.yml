@@ -18,3 +18,7 @@ services:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: cli
+  # andock-ci pipeline
+  acp:
+    hostname: acp
+    image: andockci/acp:dev-latest

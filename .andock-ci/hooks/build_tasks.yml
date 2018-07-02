@@ -1,4 +1,0 @@
-- name: composer install
-  command: "composer install"
-  args:
-    chdir: "{{ checkout_path }}"
