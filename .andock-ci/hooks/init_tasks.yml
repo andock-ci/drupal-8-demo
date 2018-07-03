@@ -1,7 +1,6 @@
-- name: fin init-andock-ci
-  shell: fin drush si standard -y
+- name: Init andock-ci environment
+  command: "fin init"
   args:
     chdir: "{{ docroot_path }}"
   when: environment_exists_before == false
-  ignore_errors: yes
 
