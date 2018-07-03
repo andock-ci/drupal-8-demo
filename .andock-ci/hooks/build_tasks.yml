@@ -1,5 +1,5 @@
 - name: Composer install
-  command: "fin exec composer installl"
+  command: "composer install"
   args:
     chdir: "{{ checkout_path }}"
 
