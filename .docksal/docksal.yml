@@ -18,13 +18,3 @@ services:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: cli
-  # andock-ci pipeline
-  acp:
-    hostname: acp
-    image: andockci/acp:dev-latest
-<<<<<<< HEAD
-    volumes:
-      - project_root:/var/www:rw,nocopy  # Project root volume
-
-=======
->>>>>>> 188f87f698640ac97910bee99f33bea9f1ba6fdc
