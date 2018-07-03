@@ -1,1 +1,5 @@
----
+- name: Composer install
+  command: "fin exec composer installl"
+  args:
+    chdir: "{{ environment_path }}"
+
