@@ -3,4 +3,4 @@
   args:
     chdir: "{{ docroot_path }}"
   when: environment_exists_before == false
-
+  ignore_errors: True
